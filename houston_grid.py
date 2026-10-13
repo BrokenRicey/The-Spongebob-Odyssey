@@ -168,13 +168,13 @@ def build_features(cache, bbox):
 
 
 PAGE = '''<!doctype html><html><head><meta charset="utf-8"><meta name="referrer" content="strict-origin-when-cross-origin"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Houston | Transmission Grid</title>
+<title>Houston | Grid & Data Centers</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <style>body{margin:0;font:14px system-ui;color:#172a3b}#map{height:100vh;background:#eef3f6}.panel{position:absolute;left:18px;top:18px;width:260px;z-index:1000;background:#fff;max-height:calc(100vh - 80px);overflow:auto;padding:22px;border-radius:14px;box-shadow:0 4px 25px #1233}h1{font-size:25px;margin:7px 0}small{color:#587080}.tag{letter-spacing:2px;font-size:10px;color:#008c87;font-weight:800}.row{margin:12px 0;display:flex;align-items:center;gap:8px}.line{width:28px;height:3px;display:inline-block}p{line-height:1.5}button{padding:8px 12px;cursor:pointer;background:#123747;color:white;border:0;border-radius:6px}hr{border:0;border-top:1px solid #dde5ea;margin:18px 0}#error{color:#a32}.leaflet-popup-content{max-height:300px;overflow:auto}td{padding:4px;border-bottom:1px solid #eee}@media(max-width:650px){.panel{width:190px;padding:12px;font-size:12px}h1{font-size:20px}}</style></head><body>
-<div id="map"></div><aside class="panel"><div class="tag">SENIOR DESIGN · GIS FOUNDATION</div><h1>Houston grid</h1><small>Transmission routes • study-area crop</small><p><b>__COUNT__</b> source features within the boundary.</p><label class="row"><input type="checkbox" id="streets"> Street background</label><div id="legend"></div><button onclick="map.fitBounds(bounds)">Reset view</button><hr><small>Click a line for voltage, owner and source substation names. Toggle voltage classes above.<p>Rectangle approximates the Houston area in the reference image; it is not the municipal boundary.</p><b>Geographic map only.</b> Crossings are not assumed connected. No power-flow results are represented.<p>Source: supplied ArcGIS map / EIA transmission layer.<br>Retrieved: __DATE__</p><div id="error"></div></small></aside>
+<div id="map"></div><aside class="panel"><div class="tag">SENIOR DESIGN · GIS FOUNDATION</div><h1>Houston grid</h1><small>Transmission routes • study-area crop</small><p><b>__COUNT__</b> source features within the boundary.</p><label class="row"><input type="checkbox" id="streets"> Street background</label><div id="legend"></div><hr><b>Data centers</b><label class="row"><input type="checkbox" id="dc-toggle" checked><span style="color:#6d28d9">●</span> Show locations</label><small id="dc-count"></small><select id="dc-select" style="width:100%;margin:12px 0;padding:8px" aria-label="Find data center"><option value="">Find a data center…</option></select><small>Address-based approximate markers. Shared locations are grouped; listings may overlap.</small><details style="margin-top:12px"><summary id="dc-excluded-count">Not mapped</summary><div id="dc-excluded"></div></details><hr><button onclick="map.fitBounds(bounds)">Reset view</button><hr><small>Click a line for voltage, owner and source substation names. Toggle voltage classes above.<p>Rectangle approximates the Houston area in the reference image; it is not the municipal boundary.</p><b>Geographic map only.</b> Crossings are not assumed connected. No power-flow results are represented.<p>Source: supplied ArcGIS map / EIA transmission layer.<br>Retrieved: __DATE__</p><div id="error"></div></small></aside>
 <script>
-const data=__DATA__,colors=__COLORS__,bbox=__BBOX__;
+const data=__DATA__,colors=__COLORS__,bbox=__BBOX__,dcRecords=__DC_DATA__;
 const bounds=[[bbox[1],bbox[0]],[bbox[3],bbox[2]]];
 if(typeof L==='undefined'){document.getElementById('error').textContent='Map library could not load. Connect to the internet or open houston_grid.svg for an offline view.';throw Error('Leaflet unavailable');}
 const map=L.map('map',{zoomControl:false,preferCanvas:true}).fitBounds(bounds);
@@ -213,10 +213,42 @@ for(const [label,color] of Object.entries(colors)){
  const row=document.createElement('label');row.className='row';const input=document.createElement('input');input.type='checkbox';input.checked=true;input.onchange=()=>input.checked?layer.addTo(map):map.removeLayer(layer);row.appendChild(input);
  const swatch=document.createElement('span');swatch.className='line';swatch.style.background=color;row.appendChild(swatch);row.appendChild(document.createTextNode(label+(label==='Other'?'':' kV')+' ('+features.length+')'));document.getElementById('legend').appendChild(row);
 }
+
+const dcLayer=L.layerGroup().addTo(map),dcMarkers=new Map(),dcGroups=new Map();
+const insideDC=dcRecords.filter(d=>d.status==='included');
+for(const d of insideDC){
+ const key=d.latitude.toFixed(7)+','+d.longitude.toFixed(7);
+ if(!dcGroups.has(key)) dcGroups.set(key,[]);
+ dcGroups.get(key).push(d);
+}
+for(const group of dcGroups.values()){
+ const d=group[0];
+ const marker=L.circleMarker([d.latitude,d.longitude],{radius:8,color:'#ffffff',weight:2,fillColor:'#6d28d9',fillOpacity:1}).addTo(dcLayer);
+ const names=group.map(x=>'<b>'+esc(x.name)+'</b>').join('<br>');
+ marker.bindTooltip(names,{direction:'top'});
+ marker.bindPopup(names+'<hr>'+esc(d.matched_address||d.source_address)+'<p>Approximate address location, not a surveyed building or electrical connection.</p>'+group.map(x=>x.note?'<small>'+esc(x.name)+': '+esc(x.note)+'</small><br>':'').join('')+'<p><a href="https://www.datacentermap.com/usa/texas/houston/" target="_blank" rel="noopener">Source: Data Center Map — Houston</a><br>Coordinates: U.S. Census address geocoder</p>');
+ for(const x of group) dcMarkers.set(x.id,marker);
+}
+const dcToggle=document.getElementById('dc-toggle');
+dcToggle.onchange=()=>dcToggle.checked?dcLayer.addTo(map):map.removeLayer(dcLayer);
+const dcSelect=document.getElementById('dc-select');
+for(const d of [...insideDC].sort((a,b)=>a.name.localeCompare(b.name))){
+ const option=document.createElement('option');option.value=d.id;option.textContent=d.name;dcSelect.appendChild(option);
+}
+dcSelect.onchange=()=>{
+ const marker=dcMarkers.get(dcSelect.value);if(!marker)return;
+ dcToggle.checked=true;dcLayer.addTo(map);map.setView(marker.getLatLng(),16);marker.openPopup();
+};
+document.getElementById('dc-count').textContent=insideDC.length+' listings at '+dcGroups.size+' address markers';
+const omitted=dcRecords.filter(d=>d.status!=='included');
+document.getElementById('dc-excluded-count').textContent='Not mapped ('+omitted.length+')';
+for(const d of omitted){const row=document.createElement('p');row.textContent=d.name+' — '+d.reason;document.getElementById('dc-excluded').appendChild(row);}
+map.attributionControl.addAttribution('Data-center names: <a href="https://www.datacentermap.com/usa/texas/houston/">Data Center Map</a> | Locations: US Census geocoder');
+
 </script></body></html>'''
 
 
-def write_svg(data, bbox, destination):
+def write_svg(data, bbox, destination, dc_records=()):
     """Offline vector preview; approximate local longitude/latitude projection."""
     w, s, e, n = bbox
     width, height = 1400, 1000
@@ -238,6 +270,11 @@ def write_svg(data, bbox, destination):
     for name, lon, lat in [('Houston',-95.3698,29.7604),('Sugar Land',-95.6349,29.6197),('Baytown',-94.9774,29.7355),('Pearland',-95.286,29.5636),('Cypress',-95.6972,29.9691),('Humble',-95.2622,29.9988)]:
         if w<=lon<=e and s<=lat<=n:
             x,y=xy([lon,lat]);svg.append(f'<circle cx="{x}" cy="{y}" r="3" fill="#153547"/><text x="{x+6}" y="{y-6}" font-family="Arial" font-size="14" fill="#173648" stroke="#f4f7fa" stroke-width="3" paint-order="stroke">{name}</text>')
+    for record in dc_records:
+        if record['status'] == 'included':
+            x,y=xy([record['longitude'],record['latitude']])
+            svg.append(f'<circle cx="{x:.2f}" cy="{y:.2f}" r="5" fill="#6d28d9" stroke="white" stroke-width="1.2"><title>{html.escape(record["name"])}</title></circle>')
+    svg.append('<text x="60" y="945" font-family="Arial" font-size="14" fill="#6d28d9">Purple dots: data-center address locations (approximate). Hover for names. Source: Data Center Map / U.S. Census.</text>')
     svg.append('<text x="60" y="970" font-family="Arial" font-size="14" fill="#587080">Source: supplied ArcGIS web map / EIA layer. Line crossings do not establish electrical connectivity.</text></svg>')
     destination.write_text('\n'.join(svg), encoding='utf-8')
 
@@ -270,6 +307,34 @@ def serve_map(output, open_browser=True):
             pass
 
 
+
+def load_data_centers(bbox):
+    path = ROOT / 'data_centers.json'
+    if not path.exists():
+        print('No data_centers.json found; building transmission map only.')
+        return []
+    records = json.loads(path.read_text(encoding='utf-8'))['records']
+    for record in records:
+        lat,lon = record.get('latitude'),record.get('longitude')
+        if lat is not None and lon is not None:
+            inside = bbox[0] <= lon <= bbox[2] and bbox[1] <= lat <= bbox[3]
+            record['status'] = 'included' if inside else 'outside'
+            record['reason'] = 'Within study boundary' if inside else 'Geocoded address outside study boundary'
+        elif record.get('outside_default_area') and list(bbox)==list(DEFAULT_BBOX):
+            record['status']='outside'
+            record['reason']='Outside default boundary by listed locality: '+record['outside_default_area']+'; exact address not geocoded'
+        else:
+            record['status']='unresolved'
+            record['reason']=record.get('unresolved_reason','No reliable address coordinates available')
+    fields=['id','name','source_address','geocode_query','matched_address','latitude','longitude','status','reason','note','source_url']
+    for filename,selected in [('data_centers_all.csv',records),('data_centers_excluded.csv',[r for r in records if r['status']!='included'])]:
+        with (ROOT/filename).open('w',newline='',encoding='utf-8-sig') as stream:
+            writer=csv.DictWriter(stream,fields,extrasaction='ignore');writer.writeheader();writer.writerows(selected)
+    features=[{'type':'Feature','properties':r,'geometry':{'type':'Point','coordinates':[r['longitude'],r['latitude']]}} for r in records if r['status']=='included']
+    (ROOT/'data_centers.geojson').write_text(json.dumps({'type':'FeatureCollection','features':features}),encoding='utf-8')
+    return records
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--bbox', type=float, nargs=4, default=DEFAULT_BBOX, metavar=('WEST','SOUTH','EAST','NORTH'))
@@ -296,11 +361,13 @@ def main():
         writer = csv.DictWriter(stream, fields);writer.writeheader()
         for f in data['features']:
             writer.writerow(f['properties'])
+    dc_records = load_data_centers(bbox)
     page = PAGE.replace('__COUNT__',str(len(data['features']))).replace('__DATE__',html.escape(cache['retrieved_utc'][:10]))
     page = page.replace('__DATA__',json.dumps(data).replace('<','\\u003c')).replace('__COLORS__',json.dumps(COLORS)).replace('__BBOX__',json.dumps(bbox))
+    page = page.replace('__DC_DATA__',json.dumps(dc_records).replace('<','\\u003c'))
     output = ROOT / 'houston_grid.html'
     output.write_text(page, encoding='utf-8')
-    write_svg(data, bbox, ROOT / 'houston_grid.svg')
+    write_svg(data, bbox, ROOT / 'houston_grid.svg', dc_records)
     print(f'Saved {len(data["features"])} clipped features.\nMap: {output}\nOffline view: {ROOT / "houston_grid.svg"}')
     if not args.no_browser:
         serve_map(output)
