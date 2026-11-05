@@ -1,0 +1,6 @@
+{
+  "notes": "Existing dependency deprecation warnings only; no failed tests.",
+  "unit_test_command": "python -m pytest -q",
+  "source_integration_report": "embedded-source/report.json",
+  "unit_tests_passed": 36
+}

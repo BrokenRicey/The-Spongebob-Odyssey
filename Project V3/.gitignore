@@ -1,0 +1,20 @@
+# Portable applications are distributed through GitHub Releases.
+/Texas Grid Analysis/
+/One Screen Build/
+*.zip
+*.lnk
+
+# Build outputs and local development files.
+__pycache__/
+.pytest_cache/
+.venv/
+*.pyc
+*.log
+Source/build*/
+Source/dist/
+Source/artifacts/
+Source/desktop-first.png
+Source/map/output/
+
+# Keep verification reports, not previous application binaries.
+/Verification/previous-two-screen-app/

@@ -1,0 +1,27 @@
+{
+  "checks": [
+    "Houston map occupies the results workspace",
+    "No visible workspace tabs; controls, map and results share one screen",
+    "All 701 Houston transmission features loaded",
+    "48 directory listings remain available",
+    "Clicking GIS route activates native attachment controls",
+    "Add load creates an attached load in the same model",
+    "Remove deletes the shared load",
+    "Undo restores load and route attachment",
+    "Off-route attachment rejected by project validator",
+    "Selected load attaches directly in the shared simulation model",
+    "Map selection updates native load editor",
+    "V4 baseline converges from single-screen controls",
+    "Baseline results reach Houston map overlay",
+    "Result rendering preserves GIS attachment location",
+    "Scenario editor produces 100 MW net demand",
+    "Scenario result updates map without navigating away",
+    "Clicking result row selects its map component",
+    "Result selector changes tables while map remains visible",
+    "Disconnection state reaches map marker",
+    "Unified project saves successfully",
+    "Project persists route attachments with simulation inputs",
+    "Open project restores the shared load and attachment"
+  ],
+  "ok": true
+}

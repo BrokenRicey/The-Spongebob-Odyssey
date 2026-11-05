@@ -1,0 +1,22 @@
+{
+  "platform": "Windows-11-10.0.26200-SP0",
+  "checks": [
+    "Native baseline worker converges",
+    "At least 10 modeled loads",
+    "Load change converges",
+    "Form MW and generation reach solver",
+    "Scenario preserves baseline results",
+    "Displayed result matches solver rounding",
+    "Selected outage opens correct line",
+    "Search selects correct modeled ID",
+    "Disconnection removes facility and generator",
+    "All 16 sweep points calculated",
+    "Every sweep point converges",
+    "Study input round trip preserves all inputs",
+    "CSV includes load sweep and numerical results",
+    "Nonconvergence has no stale numerical data",
+    "Failed scenario clears table and map results"
+  ],
+  "baseline_wall_seconds": 0.6342366000171751,
+  "ok": true
+}

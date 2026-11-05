@@ -1,0 +1,1644 @@
+{
+  "format": "texas-grid-desktop",
+  "version": 1,
+  "model": {
+    "name": "Houston representative v0.1",
+    "buses": [
+      {
+        "id": "BUS_01",
+        "vn_kv": 138,
+        "lat": 29.755379588897,
+        "lon": -95.3737289521294,
+        "substation_name": "DOWNTOWN",
+        "coordinate_source": "https://services.arcgis.com/XG15cJAlne2vxtgt/ArcGIS/rest/services/Electric_Substations/FeatureServer/0",
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "BUS_02",
+        "vn_kv": 138,
+        "lat": 29.8225770409977,
+        "lon": -95.5729953810319,
+        "substation_name": "UNKNOWN27330",
+        "coordinate_source": "https://services.arcgis.com/XG15cJAlne2vxtgt/ArcGIS/rest/services/Electric_Substations/FeatureServer/0",
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "BUS_03",
+        "vn_kv": 138,
+        "lat": 29.9648331341419,
+        "lon": -95.4398184817375,
+        "substation_name": "UNKNOWN26427",
+        "coordinate_source": "https://services.arcgis.com/XG15cJAlne2vxtgt/ArcGIS/rest/services/Electric_Substations/FeatureServer/0",
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "BUS_04",
+        "vn_kv": 138,
+        "lat": 30.0864895660407,
+        "lon": -95.4410090528255,
+        "substation_name": "UNKNOWN30350",
+        "coordinate_source": "https://services.arcgis.com/XG15cJAlne2vxtgt/ArcGIS/rest/services/Electric_Substations/FeatureServer/0",
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "BUS_05",
+        "vn_kv": 138,
+        "lat": 29.9081881227837,
+        "lon": -95.2875822584144,
+        "substation_name": "TAP",
+        "coordinate_source": "https://services.arcgis.com/XG15cJAlne2vxtgt/ArcGIS/rest/services/Electric_Substations/FeatureServer/0",
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "BUS_06",
+        "vn_kv": 138,
+        "lat": 29.7756110883811,
+        "lon": -95.1509275152926,
+        "substation_name": "UNKNOWN26273",
+        "coordinate_source": "https://services.arcgis.com/XG15cJAlne2vxtgt/ArcGIS/rest/services/Electric_Substations/FeatureServer/0",
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "BUS_07",
+        "vn_kv": 138,
+        "lat": 29.6579064025585,
+        "lon": -95.1906377241516,
+        "substation_name": "UNKNOWN26268",
+        "coordinate_source": "https://services.arcgis.com/XG15cJAlne2vxtgt/ArcGIS/rest/services/Electric_Substations/FeatureServer/0",
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "BUS_08",
+        "vn_kv": 138,
+        "lat": 29.5602344192831,
+        "lon": -95.3225724357692,
+        "substation_name": "UNKNOWN26187",
+        "coordinate_source": "https://services.arcgis.com/XG15cJAlne2vxtgt/ArcGIS/rest/services/Electric_Substations/FeatureServer/0",
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "BUS_09",
+        "vn_kv": 138,
+        "lat": 29.6665482776809,
+        "lon": -95.5302256740756,
+        "substation_name": "UNKNOWN27354",
+        "coordinate_source": "https://services.arcgis.com/XG15cJAlne2vxtgt/ArcGIS/rest/services/Electric_Substations/FeatureServer/0",
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "BUS_10",
+        "vn_kv": 138,
+        "lat": 29.8027301869486,
+        "lon": -95.7537463041486,
+        "substation_name": "UNKNOWN26521",
+        "coordinate_source": "https://services.arcgis.com/XG15cJAlne2vxtgt/ArcGIS/rest/services/Electric_Substations/FeatureServer/0",
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "BUS_11",
+        "vn_kv": 138,
+        "lat": 29.8635797689912,
+        "lon": -95.6839352126399,
+        "substation_name": "UNKNOWN26425",
+        "coordinate_source": "https://services.arcgis.com/XG15cJAlne2vxtgt/ArcGIS/rest/services/Electric_Substations/FeatureServer/0",
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "BUS_12",
+        "vn_kv": 138,
+        "lat": 30.0438820886875,
+        "lon": -95.3507931022199,
+        "substation_name": "UNKNOWN27400",
+        "coordinate_source": "https://services.arcgis.com/XG15cJAlne2vxtgt/ArcGIS/rest/services/Electric_Substations/FeatureServer/0",
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "BUS_13",
+        "vn_kv": 138,
+        "lat": 29.7231084020312,
+        "lon": -95.0592856491134,
+        "substation_name": "UNKNOWN30572",
+        "coordinate_source": "https://services.arcgis.com/XG15cJAlne2vxtgt/ArcGIS/rest/services/Electric_Substations/FeatureServer/0",
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "BUS_14",
+        "vn_kv": 138,
+        "lat": 29.4908290398284,
+        "lon": -95.4302267732469,
+        "substation_name": "UNKNOWN27381",
+        "coordinate_source": "https://services.arcgis.com/XG15cJAlne2vxtgt/ArcGIS/rest/services/Electric_Substations/FeatureServer/0",
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "BUS_15",
+        "vn_kv": 138,
+        "lat": 29.674798257034,
+        "lon": -95.6207685030639,
+        "substation_name": "UNKNOWN26165",
+        "coordinate_source": "https://services.arcgis.com/XG15cJAlne2vxtgt/ArcGIS/rest/services/Electric_Substations/FeatureServer/0",
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "HV_01",
+        "vn_kv": 345,
+        "lat": 29.755379588897,
+        "lon": -95.3737289521294,
+        "substation_name": "DOWNTOWN",
+        "coordinate_source": "https://services.arcgis.com/XG15cJAlne2vxtgt/ArcGIS/rest/services/Electric_Substations/FeatureServer/0",
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "HV_02",
+        "vn_kv": 345,
+        "lat": 29.9081881227837,
+        "lon": -95.2875822584144,
+        "substation_name": "TAP",
+        "coordinate_source": "https://services.arcgis.com/XG15cJAlne2vxtgt/ArcGIS/rest/services/Electric_Substations/FeatureServer/0",
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "HV_03",
+        "vn_kv": 345,
+        "lat": 29.8027301869486,
+        "lon": -95.7537463041486,
+        "substation_name": "UNKNOWN26521",
+        "coordinate_source": "https://services.arcgis.com/XG15cJAlne2vxtgt/ArcGIS/rest/services/Electric_Substations/FeatureServer/0",
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      }
+    ],
+    "lines": [
+      {
+        "id": "L01",
+        "from_bus": "BUS_15",
+        "to_bus": "BUS_09",
+        "length_km": 10.554981916157265,
+        "geometry_source_id": null,
+        "connection_status": "representative",
+        "r_ohm_per_km": 0.05,
+        "x_ohm_per_km": 0.4,
+        "c_nf_per_km": 0,
+        "max_i_ka": 1.0,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "L02",
+        "from_bus": "BUS_09",
+        "to_bus": "BUS_14",
+        "length_km": 26.161378469850032,
+        "geometry_source_id": null,
+        "connection_status": "representative",
+        "r_ohm_per_km": 0.05,
+        "x_ohm_per_km": 0.4,
+        "c_nf_per_km": 0,
+        "max_i_ka": 1.0,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "L03",
+        "from_bus": "BUS_14",
+        "to_bus": "BUS_08",
+        "length_km": 15.556305433080398,
+        "geometry_source_id": null,
+        "connection_status": "representative",
+        "r_ohm_per_km": 0.05,
+        "x_ohm_per_km": 0.4,
+        "c_nf_per_km": 0,
+        "max_i_ka": 1.0,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "L04",
+        "from_bus": "BUS_08",
+        "to_bus": "BUS_01",
+        "length_km": 26.70607797291763,
+        "geometry_source_id": null,
+        "connection_status": "representative",
+        "r_ohm_per_km": 0.05,
+        "x_ohm_per_km": 0.4,
+        "c_nf_per_km": 0,
+        "max_i_ka": 1.0,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "L05",
+        "from_bus": "BUS_01",
+        "to_bus": "BUS_07",
+        "length_km": 24.888555383662407,
+        "geometry_source_id": null,
+        "connection_status": "representative",
+        "r_ohm_per_km": 0.05,
+        "x_ohm_per_km": 0.4,
+        "c_nf_per_km": 0,
+        "max_i_ka": 1.0,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "L06",
+        "from_bus": "BUS_07",
+        "to_bus": "BUS_13",
+        "length_km": 17.5361707704426,
+        "geometry_source_id": null,
+        "connection_status": "representative",
+        "r_ohm_per_km": 0.05,
+        "x_ohm_per_km": 0.4,
+        "c_nf_per_km": 0,
+        "max_i_ka": 1.0,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "L07",
+        "from_bus": "BUS_13",
+        "to_bus": "BUS_06",
+        "length_km": 12.719646650114948,
+        "geometry_source_id": null,
+        "connection_status": "representative",
+        "r_ohm_per_km": 0.05,
+        "x_ohm_per_km": 0.4,
+        "c_nf_per_km": 0,
+        "max_i_ka": 1.0,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "L08",
+        "from_bus": "BUS_06",
+        "to_bus": "BUS_05",
+        "length_km": 23.729899804109916,
+        "geometry_source_id": null,
+        "connection_status": "representative",
+        "r_ohm_per_km": 0.05,
+        "x_ohm_per_km": 0.4,
+        "c_nf_per_km": 0,
+        "max_i_ka": 1.0,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "L09",
+        "from_bus": "BUS_05",
+        "to_bus": "BUS_12",
+        "length_km": 19.52471668627707,
+        "geometry_source_id": null,
+        "connection_status": "representative",
+        "r_ohm_per_km": 0.05,
+        "x_ohm_per_km": 0.4,
+        "c_nf_per_km": 0,
+        "max_i_ka": 1.0,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "L10",
+        "from_bus": "BUS_12",
+        "to_bus": "BUS_04",
+        "length_km": 11.86853967592735,
+        "geometry_source_id": null,
+        "connection_status": "representative",
+        "r_ohm_per_km": 0.05,
+        "x_ohm_per_km": 0.4,
+        "c_nf_per_km": 0,
+        "max_i_ka": 1.0,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "L11",
+        "from_bus": "BUS_04",
+        "to_bus": "BUS_03",
+        "length_km": 16.23367631857615,
+        "geometry_source_id": null,
+        "connection_status": "representative",
+        "r_ohm_per_km": 0.05,
+        "x_ohm_per_km": 0.4,
+        "c_nf_per_km": 0,
+        "max_i_ka": 1.0,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "L12",
+        "from_bus": "BUS_03",
+        "to_bus": "BUS_11",
+        "length_km": 31.299895390052324,
+        "geometry_source_id": null,
+        "connection_status": "representative",
+        "r_ohm_per_km": 0.05,
+        "x_ohm_per_km": 0.4,
+        "c_nf_per_km": 0,
+        "max_i_ka": 1.0,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "L13",
+        "from_bus": "BUS_11",
+        "to_bus": "BUS_02",
+        "length_km": 13.957150643942539,
+        "geometry_source_id": null,
+        "connection_status": "representative",
+        "r_ohm_per_km": 0.05,
+        "x_ohm_per_km": 0.4,
+        "c_nf_per_km": 0,
+        "max_i_ka": 1.0,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "L14",
+        "from_bus": "BUS_02",
+        "to_bus": "BUS_10",
+        "length_km": 21.09328260646034,
+        "geometry_source_id": null,
+        "connection_status": "representative",
+        "r_ohm_per_km": 0.05,
+        "x_ohm_per_km": 0.4,
+        "c_nf_per_km": 0,
+        "max_i_ka": 1.0,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "L15",
+        "from_bus": "BUS_10",
+        "to_bus": "BUS_15",
+        "length_km": 22.995013452505866,
+        "geometry_source_id": null,
+        "connection_status": "representative",
+        "r_ohm_per_km": 0.05,
+        "x_ohm_per_km": 0.4,
+        "c_nf_per_km": 0,
+        "max_i_ka": 1.0,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "L16",
+        "from_bus": "BUS_01",
+        "to_bus": "BUS_02",
+        "length_km": 24.75628629874933,
+        "geometry_source_id": null,
+        "connection_status": "representative",
+        "r_ohm_per_km": 0.05,
+        "x_ohm_per_km": 0.4,
+        "c_nf_per_km": 0,
+        "max_i_ka": 1.0,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "L17",
+        "from_bus": "BUS_01",
+        "to_bus": "BUS_04",
+        "length_km": 44.861219864367506,
+        "geometry_source_id": null,
+        "connection_status": "representative",
+        "r_ohm_per_km": 0.05,
+        "x_ohm_per_km": 0.4,
+        "c_nf_per_km": 0,
+        "max_i_ka": 1.0,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "L18",
+        "from_bus": "BUS_01",
+        "to_bus": "BUS_06",
+        "length_km": 25.947731623067057,
+        "geometry_source_id": null,
+        "connection_status": "representative",
+        "r_ohm_per_km": 0.05,
+        "x_ohm_per_km": 0.4,
+        "c_nf_per_km": 0,
+        "max_i_ka": 1.0,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "L19",
+        "from_bus": "BUS_01",
+        "to_bus": "BUS_08",
+        "length_km": 26.70607797291763,
+        "geometry_source_id": null,
+        "connection_status": "representative",
+        "r_ohm_per_km": 0.05,
+        "x_ohm_per_km": 0.4,
+        "c_nf_per_km": 0,
+        "max_i_ka": 1.0,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "L20",
+        "from_bus": "BUS_01",
+        "to_bus": "BUS_10",
+        "length_km": 44.462346084778794,
+        "geometry_source_id": null,
+        "connection_status": "representative",
+        "r_ohm_per_km": 0.05,
+        "x_ohm_per_km": 0.4,
+        "c_nf_per_km": 0,
+        "max_i_ka": 1.0,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "L21",
+        "from_bus": "BUS_01",
+        "to_bus": "BUS_12",
+        "length_km": 38.587331226709836,
+        "geometry_source_id": null,
+        "connection_status": "representative",
+        "r_ohm_per_km": 0.05,
+        "x_ohm_per_km": 0.4,
+        "c_nf_per_km": 0,
+        "max_i_ka": 1.0,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "L22",
+        "from_bus": "BUS_01",
+        "to_bus": "BUS_14",
+        "length_km": 35.90317105369331,
+        "geometry_source_id": null,
+        "connection_status": "representative",
+        "r_ohm_per_km": 0.05,
+        "x_ohm_per_km": 0.4,
+        "c_nf_per_km": 0,
+        "max_i_ka": 1.0,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "L23",
+        "from_bus": "HV_01",
+        "to_bus": "HV_02",
+        "length_km": 22.69758218765729,
+        "geometry_source_id": null,
+        "connection_status": "representative",
+        "r_ohm_per_km": 0.05,
+        "x_ohm_per_km": 0.4,
+        "c_nf_per_km": 0,
+        "max_i_ka": 1.0,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "L24",
+        "from_bus": "HV_02",
+        "to_bus": "HV_03",
+        "length_km": 55.75187852554871,
+        "geometry_source_id": null,
+        "connection_status": "representative",
+        "r_ohm_per_km": 0.05,
+        "x_ohm_per_km": 0.4,
+        "c_nf_per_km": 0,
+        "max_i_ka": 1.0,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "L25",
+        "from_bus": "HV_03",
+        "to_bus": "HV_01",
+        "length_km": 44.462346084778794,
+        "geometry_source_id": null,
+        "connection_status": "representative",
+        "r_ohm_per_km": 0.05,
+        "x_ohm_per_km": 0.4,
+        "c_nf_per_km": 0,
+        "max_i_ka": 1.0,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      }
+    ],
+    "transformers": [
+      {
+        "id": "T01",
+        "hv_bus": "HV_01",
+        "lv_bus": "BUS_01",
+        "sn_mva": 600,
+        "vn_hv_kv": 345,
+        "vn_lv_kv": 138,
+        "vk_percent": 12,
+        "vkr_percent": 0.3,
+        "pfe_kw": 0,
+        "i0_percent": 0,
+        "shift_degree": 0,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "T02",
+        "hv_bus": "HV_02",
+        "lv_bus": "BUS_05",
+        "sn_mva": 600,
+        "vn_hv_kv": 345,
+        "vn_lv_kv": 138,
+        "vk_percent": 12,
+        "vkr_percent": 0.3,
+        "pfe_kw": 0,
+        "i0_percent": 0,
+        "shift_degree": 0,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "T03",
+        "hv_bus": "HV_03",
+        "lv_bus": "BUS_10",
+        "sn_mva": 600,
+        "vn_hv_kv": 345,
+        "vn_lv_kv": 138,
+        "vk_percent": 12,
+        "vkr_percent": 0.3,
+        "pfe_kw": 0,
+        "i0_percent": 0,
+        "shift_degree": 0,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      }
+    ],
+    "sources": [
+      {
+        "id": "GRID_01",
+        "bus_id": "HV_01",
+        "vm_pu": 1.02,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      }
+    ],
+    "loads": [
+      {
+        "id": "DC_01",
+        "bus_id": "BUS_01",
+        "p_mw": 30.0,
+        "pf": 0.95,
+        "onsite_gen_mw": 0.0,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12",
+        "route_key": "80361",
+        "line_id": "300076",
+        "route_point": {
+          "lat": 29.964321829909593,
+          "lng": -95.4900541095747
+        }
+      },
+      {
+        "id": "DC_02",
+        "bus_id": "BUS_02",
+        "p_mw": 30.0,
+        "pf": 0.95,
+        "onsite_gen_mw": 0.0,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "DC_03",
+        "bus_id": "BUS_03",
+        "p_mw": 30.0,
+        "pf": 0.95,
+        "onsite_gen_mw": 0.0,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "DC_04",
+        "bus_id": "BUS_04",
+        "p_mw": 30.0,
+        "pf": 0.95,
+        "onsite_gen_mw": 0.0,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "DC_05",
+        "bus_id": "BUS_05",
+        "p_mw": 30.0,
+        "pf": 0.95,
+        "onsite_gen_mw": 0.0,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "DC_06",
+        "bus_id": "BUS_06",
+        "p_mw": 30.0,
+        "pf": 0.95,
+        "onsite_gen_mw": 0.0,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "DC_07",
+        "bus_id": "BUS_07",
+        "p_mw": 30.0,
+        "pf": 0.95,
+        "onsite_gen_mw": 0.0,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "DC_08",
+        "bus_id": "BUS_08",
+        "p_mw": 30.0,
+        "pf": 0.95,
+        "onsite_gen_mw": 0.0,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "DC_09",
+        "bus_id": "BUS_09",
+        "p_mw": 30.0,
+        "pf": 0.95,
+        "onsite_gen_mw": 0.0,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      },
+      {
+        "id": "DC_10",
+        "bus_id": "BUS_10",
+        "p_mw": 30.0,
+        "pf": 0.95,
+        "onsite_gen_mw": 0.0,
+        "value_status": "estimated",
+        "source_url": "docs/ASSUMPTIONS.md",
+        "retrieved_date": "2026-10-12"
+      }
+    ],
+    "assumptions": [
+      "Public substation coordinates only; voltage levels and connectivity are assumed.",
+      "No modeled branch is asserted to match a HIFLD route.",
+      "Facility connections selected for study coverage, not verified utility connections.",
+      "Constant PQ loads; onsite generation at unity power factor; no dynamic/fault model."
+    ]
+  },
+  "scenario_inputs": {
+    "kind": "Disconnect load",
+    "line": "L01",
+    "load": {
+      "id": "DC_01",
+      "bus_id": "BUS_01",
+      "p_mw": 120.0,
+      "pf": 0.95,
+      "onsite_gen_mw": 20.0
+    }
+  },
+  "baseline_results": {
+    "converged": true,
+    "status": "converged",
+    "buses": {
+      "BUS_01": {
+        "vm_pu": 1.0090807142158096,
+        "va_degree": -1.546666813718149,
+        "kv": 139.25313856178173,
+        "supplied": true
+      },
+      "BUS_02": {
+        "vm_pu": 1.0048763270807393,
+        "va_degree": -2.0132877547322723,
+        "kv": 138.67293313714202,
+        "supplied": true
+      },
+      "BUS_03": {
+        "vm_pu": 0.9996240218468555,
+        "va_degree": -2.6391612551272488,
+        "kv": 137.94811501486606,
+        "supplied": true
+      },
+      "BUS_04": {
+        "vm_pu": 1.0024212983904761,
+        "va_degree": -2.3033438133658946,
+        "kv": 138.3341391778857,
+        "supplied": true
+      },
+      "BUS_05": {
+        "vm_pu": 1.0109309375702555,
+        "va_degree": -1.2724480728423881,
+        "kv": 139.50846938469527,
+        "supplied": true
+      },
+      "BUS_06": {
+        "vm_pu": 1.0056381796027534,
+        "va_degree": -1.9302783488454798,
+        "kv": 138.77806878517995,
+        "supplied": true
+      },
+      "BUS_07": {
+        "vm_pu": 1.0035980724014064,
+        "va_degree": -2.187024562396701,
+        "kv": 138.49653399139407,
+        "supplied": true
+      },
+      "BUS_08": {
+        "vm_pu": 1.0053740389343009,
+        "va_degree": -1.9815106506839217,
+        "kv": 138.74161737293352,
+        "supplied": true
+      },
+      "BUS_09": {
+        "vm_pu": 1.0031766954913899,
+        "va_degree": -2.216973186703237,
+        "kv": 138.4383839778118,
+        "supplied": true
+      },
+      "BUS_10": {
+        "vm_pu": 1.0098565460558653,
+        "va_degree": -1.402190450000885,
+        "kv": 139.36020335570942,
+        "supplied": true
+      },
+      "BUS_11": {
+        "vm_pu": 1.0032437894243387,
+        "va_degree": -2.205605566435807,
+        "kv": 138.44764294055875,
+        "supplied": true
+      },
+      "BUS_12": {
+        "vm_pu": 1.0061562497088925,
+        "va_degree": -1.8527927887618236,
+        "kv": 138.84956245982715,
+        "supplied": true
+      },
+      "BUS_13": {
+        "vm_pu": 1.0047780544423572,
+        "va_degree": -2.038088258938456,
+        "kv": 138.6593715130453,
+        "supplied": true
+      },
+      "BUS_14": {
+        "vm_pu": 1.005513097411416,
+        "va_degree": -1.9571551043837647,
+        "kv": 138.7608074427754,
+        "supplied": true
+      },
+      "BUS_15": {
+        "vm_pu": 1.0052562353548429,
+        "va_degree": -1.9594735732753656,
+        "kv": 138.72536047896833,
+        "supplied": true
+      },
+      "HV_01": {
+        "vm_pu": 1.02,
+        "va_degree": 0.0,
+        "kv": 351.90000000000003,
+        "supplied": true
+      },
+      "HV_02": {
+        "vm_pu": 1.0166545751360743,
+        "va_degree": -0.38142269707384796,
+        "kv": 350.74582842194565,
+        "supplied": true
+      },
+      "HV_03": {
+        "vm_pu": 1.0154597562299599,
+        "va_degree": -0.5200763635534822,
+        "kv": 350.33361589933617,
+        "supplied": true
+      }
+    },
+    "lines": {
+      "L01": {
+        "loading_percent": 9.30512152076672,
+        "i_ka": 0.0930512152076672,
+        "p_from_mw": 21.294817260135044,
+        "q_from_mvar": 6.8135000475300505,
+        "pl_mw": 0.013708592000764241,
+        "in_service": true
+      },
+      "L02": {
+        "loading_percent": 3.8671506573791126,
+        "i_ka": 0.03867150657379113,
+        "p_from_mw": -8.718891331867182,
+        "q_from_mvar": -3.156691843836361,
+        "pl_mw": 0.0058685940130089875,
+        "in_service": true
+      },
+      "L03": {
+        "loading_percent": 0.5710421859370375,
+        "i_ka": 0.005710421859370375,
+        "p_from_mw": 1.3476411898221385,
+        "q_from_mvar": 0.259758506488856,
+        "pl_mw": 7.609114279882867e-05,
+        "in_service": true
+      },
+      "L04": {
+        "loading_percent": 6.2874320483411,
+        "i_ka": 0.062874320483411,
+        "p_from_mw": -14.326217450660817,
+        "q_from_mvar": -4.800686689008983,
+        "pl_mw": 0.015836090704191008,
+        "in_service": true
+      },
+      "L05": {
+        "loading_percent": 9.93637265615568,
+        "i_ka": 0.0993637265615568,
+        "p_from_mw": 22.63520337882763,
+        "q_from_mvar": 7.874723097815234,
+        "pl_mw": 0.03685926667106898,
+        "in_service": true
+      },
+      "L06": {
+        "loading_percent": 3.228682678377476,
+        "i_ka": 0.03228682678377476,
+        "p_from_mw": -7.401655887844685,
+        "q_from_mvar": -2.28067419091697,
+        "pl_mw": 0.002742058731645791,
+        "in_service": true
+      },
+      "L07": {
+        "loading_percent": 3.2286826783775613,
+        "i_ka": 0.03228682678377561,
+        "p_from_mw": -7.404397946576404,
+        "q_from_mvar": -2.302610660770599,
+        "pl_mw": 0.0019889187107597905,
+        "in_service": true
+      },
+      "L08": {
+        "loading_percent": 10.601959152205849,
+        "i_ka": 0.10601959152205849,
+        "p_from_mw": -24.355363919791248,
+        "q_from_mvar": -7.500033061930084,
+        "pl_mw": 0.04000915847047892,
+        "in_service": true
+      },
+      "L09": {
+        "loading_percent": 11.414802403632589,
+        "i_ka": 0.11414802403632589,
+        "p_from_mw": 26.19991466962166,
+        "q_from_mvar": 8.622335338370723,
+        "pl_mw": 0.03816038923559262,
+        "in_service": true
+      },
+      "L10": {
+        "loading_percent": 14.548066609008195,
+        "i_ka": 0.14548066609008195,
+        "p_from_mw": 33.19640531316098,
+        "q_from_mvar": 11.050330603950973,
+        "pl_mw": 0.037678977317270324,
+        "in_service": true
+      },
+      "L11": {
+        "loading_percent": 7.913634743912159,
+        "i_ka": 0.07913634743912158,
+        "p_from_mw": 17.977858578108805,
+        "q_from_mvar": 6.026940101509974,
+        "pl_mw": 0.0152496594133531,
+        "in_service": true
+      },
+      "L12": {
+        "loading_percent": 5.3030110876794625,
+        "i_ka": 0.05303011087679463,
+        "p_from_mw": -12.037391081307383,
+        "q_from_mvar": -3.9555803291520286,
+        "pl_mw": 0.013203200409348526,
+        "in_service": true
+      },
+      "L13": {
+        "loading_percent": 5.303011087679045,
+        "i_ka": 0.05303011087679045,
+        "p_from_mw": -12.05059428171597,
+        "q_from_mvar": -4.0612059324259215,
+        "pl_mw": 0.005887529488484589,
+        "in_service": true
+      },
+      "L14": {
+        "loading_percent": 11.09640606932216,
+        "i_ka": 0.11096406069322161,
+        "p_from_mw": -25.42738806453935,
+        "q_from_mvar": -7.987049310316248,
+        "pl_mw": 0.038958310339967994,
+        "in_service": true
+      },
+      "L15": {
+        "loading_percent": 9.305121520766665,
+        "i_ka": 0.09305121520766665,
+        "p_from_mw": 21.324682707557912,
+        "q_from_mvar": 7.05242362691903,
+        "pl_mw": 0.029865447423446767,
+        "in_service": true
+      },
+      "L16": {
+        "loading_percent": 7.3576570197507465,
+        "i_ka": 0.07357657019750746,
+        "p_from_mw": 16.64919651342822,
+        "q_from_mvar": 6.142602147482012,
+        "pl_mw": 0.020102766762288837,
+        "in_service": true
+      },
+      "L17": {
+        "loading_percent": 6.546176753232137,
+        "i_ka": 0.06546176753232137,
+        "p_from_mw": 14.847968426581602,
+        "q_from_mvar": 5.369253945988125,
+        "pl_mw": 0.028836184316183733,
+        "in_service": true
+      },
+      "L18": {
+        "loading_percent": 5.767936611791088,
+        "i_ka": 0.05767936611791088,
+        "p_from_mw": 13.06397180784966,
+        "q_from_mvar": 4.782603002715083,
+        "pl_mw": 0.012948862353272972,
+        "in_service": true
+      },
+      "L19": {
+        "loading_percent": 6.2874320483411,
+        "i_ka": 0.062874320483411,
+        "p_from_mw": 14.342053541365008,
+        "q_from_mvar": 4.927375414642515,
+        "pl_mw": 0.015836090704191008,
+        "in_service": true
+      },
+      "L20": {
+        "loading_percent": 1.1829213242688814,
+        "i_ka": 0.011829213242688815,
+        "p_from_mw": -2.811890111504018,
+        "q_from_mvar": -0.48334439612918695,
+        "pl_mw": 0.0009332443201874874,
+        "in_service": true
+      },
+      "L21": {
+        "loading_percent": 3.1381152550754345,
+        "i_ka": 0.03138115255075435,
+        "p_from_mw": 7.040351018684733,
+        "q_from_mvar": 2.7788782667556666,
+        "pl_mw": 0.005699985911064687,
+        "in_service": true
+      },
+      "L22": {
+        "loading_percent": 4.4317141206759025,
+        "i_ka": 0.044317141206759024,
+        "p_from_mw": 10.082978238389307,
+        "q_from_mvar": 3.5480160839273305,
+        "pl_mw": 0.010577122687227103,
+        "in_service": true
+      },
+      "L23": {
+        "loading_percent": 16.457021032402118,
+        "i_ka": 0.16457021032402117,
+        "p_from_mw": 94.65153040931999,
+        "q_from_mvar": 33.20506479742035,
+        "pl_mw": 0.09220899842915742,
+        "in_service": true
+      },
+      "L24": {
+        "loading_percent": 2.4228749820441933,
+        "i_ka": 0.024228749820441934,
+        "p_from_mw": 13.928869389748316,
+        "q_from_mvar": 4.7582966782831235,
+        "pl_mw": 0.004909223171400967,
+        "in_service": true
+      },
+      "L25": {
+        "loading_percent": 11.439214155571428,
+        "i_ka": 0.11439214155571427,
+        "p_from_mw": -65.71419958758513,
+        "q_from_mvar": -22.355313760695775,
+        "pl_mw": 0.08727221828516463,
+        "in_service": true
+      }
+    },
+    "transformers": {
+      "T01": {
+        "loading_percent": 24.56860933634306,
+        "pl_mw": 0.10865098164990172,
+        "p_hv_mw": 140.30053733663118,
+        "q_hv_mvar": 54.07268704965905
+      },
+      "T02": {
+        "loading_percent": 13.977019484337488,
+        "pl_mw": 0.03516427325979521,
+        "p_hv_mw": 80.63045202114208,
+        "q_hv_mvar": 27.709096131704854
+      },
+      "T03": {
+        "loading_percent": 13.805658240561968,
+        "pl_mw": 0.03430731590192693,
+        "p_hv_mw": 79.63815975416188,
+        "q_hv_mvar": 27.074336653610484
+      }
+    },
+    "loads": {
+      "DC_01": {
+        "p_mw": 30.0,
+        "q_mvar": 9.860523155365897,
+        "onsite_gen_mw": 0.0,
+        "net_grid_mw": 30.0,
+        "in_service": true,
+        "bus_id": "BUS_01"
+      },
+      "DC_02": {
+        "p_mw": 30.0,
+        "q_mvar": 9.860523155365897,
+        "onsite_gen_mw": 0.0,
+        "net_grid_mw": 30.0,
+        "in_service": true,
+        "bus_id": "BUS_02"
+      },
+      "DC_03": {
+        "p_mw": 30.0,
+        "q_mvar": 9.860523155365897,
+        "onsite_gen_mw": 0.0,
+        "net_grid_mw": 30.0,
+        "in_service": true,
+        "bus_id": "BUS_03"
+      },
+      "DC_04": {
+        "p_mw": 30.0,
+        "q_mvar": 9.860523155365897,
+        "onsite_gen_mw": 0.0,
+        "net_grid_mw": 30.0,
+        "in_service": true,
+        "bus_id": "BUS_04"
+      },
+      "DC_05": {
+        "p_mw": 30.0,
+        "q_mvar": 9.860523155365897,
+        "onsite_gen_mw": 0.0,
+        "net_grid_mw": 30.0,
+        "in_service": true,
+        "bus_id": "BUS_05"
+      },
+      "DC_06": {
+        "p_mw": 30.0,
+        "q_mvar": 9.860523155365897,
+        "onsite_gen_mw": 0.0,
+        "net_grid_mw": 30.0,
+        "in_service": true,
+        "bus_id": "BUS_06"
+      },
+      "DC_07": {
+        "p_mw": 30.0,
+        "q_mvar": 9.860523155365897,
+        "onsite_gen_mw": 0.0,
+        "net_grid_mw": 30.0,
+        "in_service": true,
+        "bus_id": "BUS_07"
+      },
+      "DC_08": {
+        "p_mw": 30.0,
+        "q_mvar": 9.860523155365897,
+        "onsite_gen_mw": 0.0,
+        "net_grid_mw": 30.0,
+        "in_service": true,
+        "bus_id": "BUS_08"
+      },
+      "DC_09": {
+        "p_mw": 30.0,
+        "q_mvar": 9.860523155365897,
+        "onsite_gen_mw": 0.0,
+        "net_grid_mw": 30.0,
+        "in_service": true,
+        "bus_id": "BUS_09"
+      },
+      "DC_10": {
+        "p_mw": 30.0,
+        "q_mvar": 9.860523155365897,
+        "onsite_gen_mw": 0.0,
+        "net_grid_mw": 30.0,
+        "in_service": true,
+        "bus_id": "BUS_10"
+      }
+    },
+    "totals": {
+      "grid_supply_mw": 300.75353955182186,
+      "grid_supply_mvar": 110.3312433540583,
+      "losses_mw": 0.7535395518239432,
+      "losses_percent": 0.2505505181906939,
+      "min_voltage_pu": 0.9996240218468555,
+      "max_loading_percent": 16.457021032402118,
+      "unsupplied_buses": 0
+    },
+    "violations": [],
+    "limits": {
+      "voltage_min_pu": 0.95,
+      "voltage_max_pu": 1.05,
+      "loading_percent": 100.0
+    },
+    "message": "Power flow converged",
+    "engine": "TL_Senior_Simulation_V4.run_power_flow",
+    "runtime_seconds": 0.15229379991069436,
+    "timestamp": "2026-10-31T04:45:18.345423+00:00"
+  },
+  "scenario_results": {
+    "converged": true,
+    "status": "converged",
+    "buses": {
+      "BUS_01": {
+        "vm_pu": 1.0106072306082483,
+        "va_degree": -1.3345379613615451,
+        "kv": 139.46379782393828,
+        "supplied": true
+      },
+      "BUS_02": {
+        "vm_pu": 1.0059645316056272,
+        "va_degree": -1.8595721871802513,
+        "kv": 138.82310536157655,
+        "supplied": true
+      },
+      "BUS_03": {
+        "vm_pu": 1.0007423580829338,
+        "va_degree": -2.48094576718481,
+        "kv": 138.10244541544486,
+        "supplied": true
+      },
+      "BUS_04": {
+        "vm_pu": 1.0035450271586752,
+        "va_degree": -2.1447559359703905,
+        "kv": 138.48921374789717,
+        "supplied": true
+      },
+      "BUS_05": {
+        "vm_pu": 1.0115107426158543,
+        "va_degree": -1.187372407466858,
+        "kv": 139.5884824809879,
+        "supplied": true
+      },
+      "BUS_06": {
+        "vm_pu": 1.006769556817734,
+        "va_degree": -1.771310138149104,
+        "kv": 138.93419884084727,
+        "supplied": true
+      },
+      "BUS_07": {
+        "vm_pu": 1.0049499501729537,
+        "va_degree": -1.9975498979562922,
+        "kv": 138.68309312386762,
+        "supplied": true
+      },
+      "BUS_08": {
+        "vm_pu": 1.0068227288567062,
+        "va_degree": -1.7790132451393792,
+        "kv": 138.94153658222547,
+        "supplied": true
+      },
+      "BUS_09": {
+        "vm_pu": 1.0042481774851237,
+        "va_degree": -2.0655206353296007,
+        "kv": 138.58624849294708,
+        "supplied": true
+      },
+      "BUS_10": {
+        "vm_pu": 1.010548475728357,
+        "va_degree": -1.3017999047662032,
+        "kv": 139.45568965051325,
+        "supplied": true
+      },
+      "BUS_11": {
+        "vm_pu": 1.0043414551267176,
+        "va_degree": -2.0505120164757384,
+        "kv": 138.59912080748703,
+        "supplied": true
+      },
+      "BUS_12": {
+        "vm_pu": 1.0071750703718352,
+        "va_degree": -1.7090889097705975,
+        "kv": 138.99015971131325,
+        "supplied": true
+      },
+      "BUS_13": {
+        "vm_pu": 1.00600267768891,
+        "va_degree": -1.8663223555761825,
+        "kv": 138.82836952106956,
+        "supplied": true
+      },
+      "BUS_14": {
+        "vm_pu": 1.0068662541415578,
+        "va_degree": -1.7674859960112876,
+        "kv": 138.947543071535,
+        "supplied": true
+      },
+      "BUS_15": {
+        "vm_pu": 1.0062109604892042,
+        "va_degree": -1.8242212924464032,
+        "kv": 138.85711254751018,
+        "supplied": true
+      },
+      "HV_01": {
+        "vm_pu": 1.02,
+        "va_degree": 0.0,
+        "kv": 351.90000000000003,
+        "supplied": true
+      },
+      "HV_02": {
+        "vm_pu": 1.016876902033327,
+        "va_degree": -0.3555859866965211,
+        "kv": 350.82253120149784,
+        "supplied": true
+      },
+      "HV_03": {
+        "vm_pu": 1.0157728571608204,
+        "va_degree": -0.48343483458104675,
+        "kv": 350.4416357204831,
+        "supplied": true
+      }
+    },
+    "lines": {
+      "L01": {
+        "loading_percent": 8.73801251445377,
+        "i_ka": 0.0873801251445377,
+        "p_from_mw": 20.00173951174425,
+        "q_from_mvar": 6.448650977163967,
+        "pl_mw": 0.012088546276114442,
+        "in_service": true
+      },
+      "L02": {
+        "loading_percent": 4.419048222857059,
+        "i_ka": 0.04419048222857059,
+        "p_from_mw": -10.010349034533025,
+        "q_from_mvar": -3.508580548408321,
+        "pl_mw": 0.007663185956809926,
+        "in_service": true
+      },
+      "L03": {
+        "loading_percent": 0.26323990437206546,
+        "i_ka": 0.002632399043720655,
+        "p_from_mw": 0.6311062191019471,
+        "q_from_mvar": 0.0552980899542602,
+        "pl_mw": 1.616967047013418e-05,
+        "in_service": true
+      },
+      "L04": {
+        "loading_percent": 6.433001096198367,
+        "i_ka": 0.06433001096198367,
+        "p_from_mw": -14.68445497528463,
+        "q_from_mvar": -4.902677211387751,
+        "pl_mw": 0.016577865910193168,
+        "in_service": true
+      },
+      "L05": {
+        "loading_percent": 10.293073441978729,
+        "i_ka": 0.10293073441978728,
+        "p_from_mw": 23.49714491128803,
+        "q_from_mvar": 8.129688069768305,
+        "pl_mw": 0.03955315138595594,
+        "in_service": true
+      },
+      "L06": {
+        "loading_percent": 2.853900429269336,
+        "i_ka": 0.02853900429269336,
+        "p_from_mw": -6.5424082400987285,
+        "q_from_mvar": -2.0472602966835005,
+        "pl_mw": 0.002142415287766042,
+        "in_service": true
+      },
+      "L07": {
+        "loading_percent": 2.8539004292696557,
+        "i_ka": 0.028539004292696558,
+        "p_from_mw": -6.544550655386726,
+        "q_from_mvar": -2.0643996189874607,
+        "pl_mw": 0.0015539746843789004,
+        "in_service": true
+      },
+      "L08": {
+        "loading_percent": 9.432606589449321,
+        "i_ka": 0.09432606589449322,
+        "p_from_mw": -21.668074845674827,
+        "q_from_mvar": -6.762156434950977,
+        "pl_mw": 0.03167018545149958,
+        "in_service": true
+      },
+      "L09": {
+        "loading_percent": 10.286971076706523,
+        "i_ka": 0.10286971076706523,
+        "p_from_mw": 23.60097573231383,
+        "q_from_mvar": 7.846869453064588,
+        "pl_mw": 0.030992102329214788,
+        "in_service": true
+      },
+      "L10": {
+        "loading_percent": 14.092907761780554,
+        "i_ka": 0.14092907761780554,
+        "p_from_mw": 32.174985069021474,
+        "q_from_mvar": 10.761541448200445,
+        "pl_mw": 0.03535816873132802,
+        "in_service": true
+      },
+      "L11": {
+        "loading_percent": 7.930839425085017,
+        "i_ka": 0.07930839425085016,
+        "p_from_mw": 18.0378293948548,
+        "q_from_mvar": 6.044759255677724,
+        "pl_mw": 0.015316038703094392,
+        "in_service": true
+      },
+      "L12": {
+        "loading_percent": 5.271036750718248,
+        "i_ka": 0.05271036750718248,
+        "p_from_mw": -11.977486643850487,
+        "q_from_mvar": -3.938292209306356,
+        "pl_mw": 0.013044463849702481,
+        "in_service": true
+      },
+      "L13": {
+        "loading_percent": 5.271036750717943,
+        "i_ka": 0.05271036750717943,
+        "p_from_mw": -11.990531107699637,
+        "q_from_mvar": -4.042647920103309,
+        "pl_mw": 0.0058167461824059075,
+        "in_service": true
+      },
+      "L14": {
+        "loading_percent": 10.150634215793323,
+        "i_ka": 0.10150634215793324,
+        "p_from_mw": -23.260801467548,
+        "q_from_mvar": -7.391883666277166,
+        "pl_mw": 0.03260031424462895,
+        "in_service": true
+      },
+      "L15": {
+        "loading_percent": 8.73801251445329,
+        "i_ka": 0.0873801251445329,
+        "p_from_mw": 20.02807553831843,
+        "q_from_mvar": 6.659339189760584,
+        "pl_mw": 0.026336026574806937,
+        "in_service": true
+      },
+      "L16": {
+        "loading_percent": 8.255433874624714,
+        "i_ka": 0.08255433874624714,
+        "p_from_mw": 18.760854312674766,
+        "q_from_mvar": 6.7602847893729745,
+        "pl_mw": 0.02530792634039969,
+        "in_service": true
+      },
+      "L17": {
+        "loading_percent": 7.003298203597303,
+        "i_ka": 0.07003298203597302,
+        "p_from_mw": 15.93120657038703,
+        "q_from_mvar": 5.69063891926789,
+        "pl_mw": 0.03300407582212905,
+        "in_service": true
+      },
+      "L18": {
+        "loading_percent": 6.546018684971473,
+        "i_ka": 0.06546018684971473,
+        "p_from_mw": 14.894707829258039,
+        "q_from_mvar": 5.3086224957674295,
+        "pl_mw": 0.016678044861347274,
+        "in_service": true
+      },
+      "L19": {
+        "loading_percent": 6.433001096198367,
+        "i_ka": 0.06433001096198367,
+        "p_from_mw": 14.701032841194824,
+        "q_from_mvar": 5.035300138669303,
+        "pl_mw": 0.016577865910193168,
+        "in_service": true
+      },
+      "L20": {
+        "loading_percent": 0.25800974707868524,
+        "i_ka": 0.002580097470786852,
+        "p_from_mw": -0.6073892625150865,
+        "q_from_mvar": 0.13968387549914657,
+        "pl_mw": 4.439722848081917e-05,
+        "in_service": true
+      },
+      "L21": {
+        "loading_percent": 3.8081967946682576,
+        "i_ka": 0.038081967946682574,
+        "p_from_mw": 8.613395551205176,
+        "q_from_mvar": 3.229761711126069,
+        "pl_mw": 0.00839411216958652,
+        "in_service": true
+      },
+      "L22": {
+        "loading_percent": 4.67425249743735,
+        "i_ka": 0.0467425249743735,
+        "p_from_mw": 10.660884969546403,
+        "q_from_mvar": 3.719316365655746,
+        "pl_mw": 0.011766529954664762,
+        "in_service": true
+      },
+      "L23": {
+        "loading_percent": 15.347741305594088,
+        "i_ka": 0.15347741305594087,
+        "p_from_mw": 88.26301432932354,
+        "q_from_mvar": 30.99128691550137,
+        "pl_mw": 0.0801973092137871,
+        "in_service": true
+      },
+      "L24": {
+        "loading_percent": 2.2354494899156903,
+        "i_ka": 0.0223544948991569,
+        "p_from_mw": 12.851399895417245,
+        "q_from_mvar": 4.399327229166777,
+        "pl_mw": 0.00417907809685758,
+        "in_service": true
+      },
+      "L25": {
+        "loading_percent": 10.637922752050613,
+        "i_ka": 0.10637922752050613,
+        "p_from_mw": -61.11127805364663,
+        "q_from_mvar": -20.85047096135701,
+        "pl_mw": 0.07547398801352756,
+        "in_service": true
+      }
+    },
+    "transformers": {
+      "T01": {
+        "loading_percent": 21.20403608699669,
+        "pl_mw": 0.08093000634814018,
+        "p_hv_mw": 121.23380057057807,
+        "q_hv_mvar": 46.284784974526026
+      },
+      "T02": {
+        "loading_percent": 13.058918036911859,
+        "pl_mw": 0.030696361253077953,
+        "p_hv_mw": 75.33141712469255,
+        "q_hv_mvar": 25.95038121262527
+      },
+      "T03": {
+        "loading_percent": 12.820966143294058,
+        "pl_mw": 0.029587891112555553,
+        "p_hv_mw": 73.95849887096657,
+        "q_hv_mvar": 25.216365565746177
+      }
+    },
+    "loads": {
+      "DC_01": {
+        "p_mw": 0.0,
+        "q_mvar": 0.0,
+        "onsite_gen_mw": 0.0,
+        "net_grid_mw": 0.0,
+        "in_service": false,
+        "bus_id": "BUS_01"
+      },
+      "DC_02": {
+        "p_mw": 30.0,
+        "q_mvar": 9.860523155365897,
+        "onsite_gen_mw": 0.0,
+        "net_grid_mw": 30.0,
+        "in_service": true,
+        "bus_id": "BUS_02"
+      },
+      "DC_03": {
+        "p_mw": 30.0,
+        "q_mvar": 9.860523155365897,
+        "onsite_gen_mw": 0.0,
+        "net_grid_mw": 30.0,
+        "in_service": true,
+        "bus_id": "BUS_03"
+      },
+      "DC_04": {
+        "p_mw": 30.0,
+        "q_mvar": 9.860523155365897,
+        "onsite_gen_mw": 0.0,
+        "net_grid_mw": 30.0,
+        "in_service": true,
+        "bus_id": "BUS_04"
+      },
+      "DC_05": {
+        "p_mw": 30.0,
+        "q_mvar": 9.860523155365897,
+        "onsite_gen_mw": 0.0,
+        "net_grid_mw": 30.0,
+        "in_service": true,
+        "bus_id": "BUS_05"
+      },
+      "DC_06": {
+        "p_mw": 30.0,
+        "q_mvar": 9.860523155365897,
+        "onsite_gen_mw": 0.0,
+        "net_grid_mw": 30.0,
+        "in_service": true,
+        "bus_id": "BUS_06"
+      },
+      "DC_07": {
+        "p_mw": 30.0,
+        "q_mvar": 9.860523155365897,
+        "onsite_gen_mw": 0.0,
+        "net_grid_mw": 30.0,
+        "in_service": true,
+        "bus_id": "BUS_07"
+      },
+      "DC_08": {
+        "p_mw": 30.0,
+        "q_mvar": 9.860523155365897,
+        "onsite_gen_mw": 0.0,
+        "net_grid_mw": 30.0,
+        "in_service": true,
+        "bus_id": "BUS_08"
+      },
+      "DC_09": {
+        "p_mw": 30.0,
+        "q_mvar": 9.860523155365897,
+        "onsite_gen_mw": 0.0,
+        "net_grid_mw": 30.0,
+        "in_service": true,
+        "bus_id": "BUS_09"
+      },
+      "DC_10": {
+        "p_mw": 30.0,
+        "q_mvar": 9.860523155365897,
+        "onsite_gen_mw": 0.0,
+        "net_grid_mw": 30.0,
+        "in_service": true,
+        "bus_id": "BUS_10"
+      }
+    },
+    "totals": {
+      "grid_supply_mw": 270.68356694156193,
+      "grid_supply_mvar": 98.7303347554945,
+      "losses_mw": 0.6835669415631168,
+      "losses_percent": 0.2525335945904291,
+      "min_voltage_pu": 1.0007423580829338,
+      "max_loading_percent": 15.347741305594088,
+      "unsupplied_buses": 0
+    },
+    "violations": [],
+    "limits": {
+      "voltage_min_pu": 0.95,
+      "voltage_max_pu": 1.05,
+      "loading_percent": 100.0
+    },
+    "message": "Power flow converged",
+    "engine": "TL_Senior_Simulation_V4.run_power_flow",
+    "runtime_seconds": 0.15860549989156425,
+    "timestamp": "2026-10-31T04:45:19.948652+00:00"
+  },
+  "assumptions": "Representative synthetic electrical topology; no live telemetry. Geographic layers do not establish electrical connectivity."
+}

@@ -1,3 +1,7 @@
+## Project V3 — combined desktop application
+
+The current combined application source is in [Project V3](Project%20V3/README.md), with separate simulation, map, and program folders. Download the Windows app from the [Project V3 release](https://github.com/BrokenRicey/The-Spongebob-Odyssey/releases/tag/project-v3).
+
 # Houston transmission grid — Python GIS foundation
 
 ## Run in PyCharm, Anaconda, or a terminal

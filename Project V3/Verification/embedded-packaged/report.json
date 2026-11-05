@@ -1,0 +1,15 @@
+{
+  "checks": [
+    "Embedded map contains all 701 source routes and Leaflet initializes",
+    "Added load snaps to selected transmission route",
+    "Edited demand, removed last load, and restored with undo",
+    "Moved load to another route",
+    "Invalid off-route attachment rejected",
+    "Native Save study writes load JSON without browser downloads",
+    "Native Open study restored route attachment and 82 MW demand",
+    "Existing representative-network baseline still converges",
+    "Houston map is the default application tab",
+    "Mapped load with explicit BUS_01 connection runs through V4 and reaches simulation results"
+  ],
+  "ok": true
+}
