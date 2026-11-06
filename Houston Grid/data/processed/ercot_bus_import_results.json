@@ -1,0 +1,8 @@
+{
+  "total_bus_names": 19677,
+  "placed_candidates": 337,
+  "candidate_stations": 17,
+  "unmatched": 19340,
+  "hub_houston_placed": 76,
+  "all_locations_inferred": true
+}

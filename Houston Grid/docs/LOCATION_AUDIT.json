@@ -1,0 +1,538 @@
+[
+  {
+    "names": [
+      "TRG Houston One HOU1",
+      "TRG Houston Two HOU2",
+      "TRG Houston Campus"
+    ],
+    "status": "corrected",
+    "osm_way": 1209764177,
+    "evidence": "PeeringDB facility 5268 coordinate falls inside this building footprint. https://www.peeringdb.com/fac/5268",
+    "lat": 30.0662905,
+    "lon": -95.4592044051858
+  },
+  {
+    "names": [
+      "Netrality - 1301 Fannin",
+      "Evocative - INAP Houston",
+      "NaviSite Houston",
+      "TeleSource IDC"
+    ],
+    "status": "corrected",
+    "osm_way": 510323329,
+    "evidence": "Building matched to the listing street address using OpenStreetMap address tags.",
+    "lat": 29.7534328,
+    "lon": -95.3657979875635
+  },
+  {
+    "names": [
+      "12231 North Fwy (IAH13)"
+    ],
+    "status": "needs review"
+  },
+  {
+    "names": [
+      "12235 North Fwy (IAH14)"
+    ],
+    "status": "needs review"
+  },
+  {
+    "names": [
+      "12061 North Freeway (IAH11)",
+      "Cogent Data Center - Houston"
+    ],
+    "status": "needs review"
+  },
+  {
+    "names": [
+      "Digital Houston Campus",
+      "12001 North Fwy (IAH10)",
+      "Lumen Houston 1"
+    ],
+    "status": "needs review"
+  },
+  {
+    "names": [
+      "EdgeConneX Houston",
+      "LOGIX Houston #1"
+    ],
+    "status": "needs review"
+  },
+  {
+    "names": [
+      "Skybox Houston One"
+    ],
+    "status": "corrected",
+    "osm_way": 391991732,
+    "evidence": "Named Skybox Houston One site boundary and largest building inside it; matches supplied screenshot.",
+    "lat": 29.8029771,
+    "lon": -95.75549427498999
+  },
+  {
+    "names": [
+      "Data Foundry - Houston 2"
+    ],
+    "status": "corrected",
+    "osm_way": 1535715798,
+    "evidence": "Named Data Foundry data-center building.",
+    "lat": 29.94525965,
+    "lon": -95.4241991772091
+  },
+  {
+    "names": [
+      "DataBank HOU1 - Westway Park I",
+      "DataBank Westway Park Campus"
+    ],
+    "status": "needs review"
+  },
+  {
+    "names": [
+      "Lighthouse Data Center"
+    ],
+    "status": "needs review"
+  },
+  {
+    "names": [
+      "DataBank HOU2 - Westway Park II"
+    ],
+    "status": "needs review"
+  },
+  {
+    "names": [
+      "Equinix HO1"
+    ],
+    "status": "corrected",
+    "osm_way": 1063444870,
+    "evidence": "PeeringDB facility 5334 coordinate falls inside this building footprint. https://www.peeringdb.com/fac/5334",
+    "lat": 29.9358645,
+    "lon": -95.36445526467294
+  },
+  {
+    "names": [
+      "DataBank HOU3 - Westway Park III",
+      "CyrusOne Houston Campus",
+      "CyrusOne HOU3 - Houston"
+    ],
+    "status": "corrected",
+    "osm_way": 1094569966,
+    "evidence": "PeeringDB facility 16591 coordinate falls inside this building footprint. https://www.peeringdb.com/fac/16591",
+    "lat": 29.8439321,
+    "lon": -95.55983604392611
+  },
+  {
+    "names": [
+      "DataBank HOU5 - Houston Galleria"
+    ],
+    "status": "needs review"
+  },
+  {
+    "names": [
+      "1001 Texas Data Center",
+      "Quasar Data Center"
+    ],
+    "status": "corrected",
+    "osm_way": 54358314,
+    "evidence": "Building matched to the listing street address using OpenStreetMap address tags.",
+    "lat": 29.7603903,
+    "lon": -95.36180761356027
+  },
+  {
+    "names": [
+      "Serverfarm Houston Data Center CTX2",
+      "Serverfarm Houston Data Center CTX1",
+      "Serverfarm Houston CTX Campus"
+    ],
+    "status": "needs review"
+  },
+  {
+    "names": [
+      "Saragon Houston"
+    ],
+    "status": "needs review"
+  },
+  {
+    "names": [
+      "Data Foundry - Houston 1"
+    ],
+    "status": "corrected",
+    "osm_way": 260359937,
+    "evidence": "Building matched to the listing street address using OpenStreetMap address tags.",
+    "lat": 29.7497579,
+    "lon": -95.47192922370326
+  },
+  {
+    "names": [
+      "Iozera Houston"
+    ],
+    "status": "needs review"
+  },
+  {
+    "names": [
+      "Crown Castle Houston (TX1)"
+    ],
+    "status": "needs review"
+  },
+  {
+    "names": [
+      "Verizon Houston"
+    ],
+    "status": "corrected",
+    "osm_way": 846944288,
+    "evidence": "Building matched to the listing street address using OpenStreetMap address tags.",
+    "lat": 29.73310515,
+    "lon": -95.41690563203441
+  },
+  {
+    "names": [
+      "FIBERTOWN - Houston, Texas"
+    ],
+    "status": "corrected",
+    "osm_way": 855206688,
+    "evidence": "PeeringDB facility 8317 coordinate falls inside this building footprint. https://www.peeringdb.com/fac/8317",
+    "lat": 29.942355499999998,
+    "lon": -95.41737783351297
+  },
+  {
+    "names": [
+      "LOGIX Houston #2"
+    ],
+    "status": "needs review"
+  },
+  {
+    "names": [
+      "Lumen Houston 3"
+    ],
+    "status": "needs review"
+  },
+  {
+    "names": [
+      "24 Hour Data Houston"
+    ],
+    "status": "corrected",
+    "osm_way": 54367926,
+    "evidence": "Building matched to the listing street address using OpenStreetMap address tags.",
+    "lat": 29.7584017,
+    "lon": -95.36331829913598
+  },
+  {
+    "names": [
+      "LOGIX Houston #3"
+    ],
+    "status": "corrected",
+    "osm_way": 1146875456,
+    "evidence": "Building matched to the listing street address using OpenStreetMap address tags.",
+    "lat": 29.7291186,
+    "lon": -95.45319333685622
+  },
+  {
+    "names": [
+      "Energy Transfer Data Center"
+    ],
+    "status": "needs review"
+  },
+  {
+    "names": [
+      "CyrusOne HOU4 - Houston"
+    ],
+    "status": "needs review"
+  },
+  {
+    "names": [
+      "Hostrunway Houston"
+    ],
+    "status": "needs review"
+  },
+  {
+    "names": [
+      "Lumen Houston 2"
+    ],
+    "status": "needs review"
+  },
+  {
+    "names": [
+      "Lumen Houston 4"
+    ],
+    "status": "corrected",
+    "osm_way": 477775687,
+    "evidence": "Building matched to the listing street address using OpenStreetMap address tags.",
+    "lat": 29.7132535,
+    "lon": -95.5504968657256
+  },
+  {
+    "names": [
+      "Lumen, 1124 Hardy Rd"
+    ],
+    "status": "needs review"
+  },
+  {
+    "update": "2026-11-05",
+    "changes": [
+      {
+        "id": "DC015",
+        "osm_way": 1084929882,
+        "verified": true,
+        "evidence": "Lighthouse label in supplied image(7).png matched to the building west of Braxton Drive."
+      },
+      {
+        "id": "DC021",
+        "osm_way": 749104170,
+        "verified": true,
+        "evidence": "LOGIX Houston #1 label in supplied image(8).png matched to the eastern building section."
+      },
+      {
+        "id": "DC010",
+        "osm_way": 390642683,
+        "verified": false,
+        "evidence": "Western companion marker in supplied image(8).png; identity inferred from the shared-address listing, not explicitly labeled in the screenshot."
+      },
+      {
+        "id": "DC050",
+        "osm_way": 125836680,
+        "verified": false,
+        "evidence": "Hostrunway label in supplied image(9).png matched to this address building. Suite/mailbox listing; physical data-center occupancy remains unverified."
+      }
+    ],
+    "display": "Individual markers; screen-space collision offsets only; no physical facility deduplication implied."
+  },
+  {
+    "revision": "2026-11-05 red marks",
+    "positions": {
+      "DC042": [
+        29.69342,
+        -95.38085
+      ],
+      "DC019": [
+        29.72832,
+        -95.44499
+      ],
+      "DC052": [
+        29.87439,
+        -95.54555
+      ]
+    },
+    "verification": "User-marked approximate positions, orange",
+    "display": "One dot per proximity group, splits on zoom; exact shared coordinates remain one dot."
+  },
+  {
+    "revision": "2026-11-05 next annotated locations",
+    "changes": [
+      {
+        "ids": [
+          "DC022",
+          "DC029",
+          "DC045"
+        ],
+        "names": [
+          "Serverfarm Houston Data Center CTX2",
+          "Serverfarm Houston Data Center CTX1",
+          "Serverfarm Houston CTX Campus"
+        ],
+        "latitude": 29.9972878,
+        "longitude": -95.5639526,
+        "screenshot": "image(20261106-025918).png",
+        "osm_way": 543404966,
+        "verification": "User annotation; orange"
+      },
+      {
+        "ids": [
+          "DC023"
+        ],
+        "names": [
+          "Saragon Houston"
+        ],
+        "latitude": 29.9064815,
+        "longitude": -95.6260156,
+        "screenshot": "image(20261106-025950).png",
+        "osm_way": 655432715,
+        "verification": "User annotation; orange"
+      },
+      {
+        "ids": [
+          "DC028"
+        ],
+        "names": [
+          "Iozera Houston"
+        ],
+        "latitude": 29.6493142,
+        "longitude": -95.5646069,
+        "screenshot": "image(20261106-030041).png",
+        "osm_way": 352526831,
+        "verification": "User annotation; orange"
+      },
+      {
+        "ids": [
+          "DC037"
+        ],
+        "names": [
+          "Lumen Houston 3"
+        ],
+        "latitude": 29.7710873,
+        "longitude": -95.3462976,
+        "screenshot": "image(20261106-030153).png",
+        "osm_way": 602223445,
+        "verification": "User annotation; orange"
+      },
+      {
+        "ids": [
+          "DC069"
+        ],
+        "names": [
+          "Lumen, 1124 Hardy Rd"
+        ],
+        "latitude": 29.7713429,
+        "longitude": -95.3509744,
+        "screenshot": "image(20261106-030215).png",
+        "osm_way": 576414487,
+        "verification": "User annotation; orange"
+      },
+      {
+        "ids": [
+          "DC030"
+        ],
+        "names": [
+          "Crown Castle Houston (TX1)"
+        ],
+        "latitude": 29.7596382,
+        "longitude": -95.3663068,
+        "screenshot": "image(20261106-030418).png",
+        "osm_way": 510322930,
+        "verification": "User annotation; orange"
+      },
+      {
+        "ids": [
+          "DC035"
+        ],
+        "names": [
+          "LOGIX Houston #2"
+        ],
+        "latitude": 29.7592692,
+        "longitude": -95.3663091,
+        "screenshot": "image(20261106-030431).png",
+        "osm_way": 510322931,
+        "verification": "User annotation; orange"
+      }
+    ]
+  },
+  {
+    "revision": "2026-11-05 North Freeway and TRG annotations",
+    "changes": [
+      {
+        "ids": [
+          "DC006"
+        ],
+        "names": [
+          "12235 North Fwy (IAH14)"
+        ],
+        "latitude": 29.9445231,
+        "longitude": -95.4167982,
+        "annotation_mapping": "First image red mark; IAH14 inferred from the two-listing popup after user explicitly assigned IAH13 to image 2."
+      },
+      {
+        "ids": [
+          "DC005"
+        ],
+        "names": [
+          "12231 North Fwy (IAH13)"
+        ],
+        "latitude": 29.9424894,
+        "longitude": -95.4165487,
+        "annotation_mapping": "Second image red mark; user explicitly identifies IAH13."
+      },
+      {
+        "ids": [
+          "DC007"
+        ],
+        "names": [
+          "12061 North Freeway (IAH11)"
+        ],
+        "latitude": 29.9431709,
+        "longitude": -95.4167735,
+        "annotation_mapping": "IAH11: red underline maps to red target in the third image."
+      },
+      {
+        "ids": [
+          "DC024"
+        ],
+        "names": [
+          "Cogent Data Center - Houston"
+        ],
+        "latitude": 29.9438682,
+        "longitude": -95.4165321,
+        "annotation_mapping": "Cogent: cyan underline maps to cyan target in the third image."
+      },
+      {
+        "ids": [
+          "DC033"
+        ],
+        "names": [
+          "FIBERTOWN - Houston, Texas"
+        ],
+        "latitude": 29.9435083,
+        "longitude": -95.4158328,
+        "annotation_mapping": "FIBERTOWN: red target in the fourth image, east of the existing building; user-directed site position."
+      },
+      {
+        "ids": [
+          "DC008"
+        ],
+        "names": [
+          "Digital Houston Campus"
+        ],
+        "latitude": 29.9430072,
+        "longitude": -95.4171778,
+        "annotation_mapping": "Digital Houston Campus: cyan underline maps to cyan target in the fifth image."
+      },
+      {
+        "ids": [
+          "DC009",
+          "DC039"
+        ],
+        "names": [
+          "12001 North Fwy (IAH10)",
+          "Lumen Houston 1"
+        ],
+        "latitude": 29.9417661,
+        "longitude": -95.4172851,
+        "annotation_mapping": "IAH10 and Lumen Houston 1: red underlines map to the red target in the fifth image."
+      },
+      {
+        "ids": [
+          "DC003"
+        ],
+        "names": [
+          "TRG Houston Two HOU2"
+        ],
+        "latitude": 30.0675254,
+        "longitude": -95.4601056,
+        "annotation_mapping": "TRG HOU2: red underline maps to red target in the sixth image; HOU1 and campus stay at their existing positions."
+      }
+    ]
+  },
+  {
+    "revision": "Final Westway moves and uniform purple display",
+    "changes": [
+      {
+        "id": "DC014",
+        "name": "DataBank HOU1 - Westway Park I",
+        "lat": 29.8443131,
+        "lon": -95.555062,
+        "osm_way": 130170395
+      },
+      {
+        "id": "DC016",
+        "name": "DataBank HOU2 - Westway Park II",
+        "lat": 29.8442756,
+        "lon": -95.5566144,
+        "osm_way": 975608688
+      },
+      {
+        "id": "DC043",
+        "name": "CyrusOne HOU4 - Houston",
+        "lat": 29.8439733,
+        "lon": -95.5584238,
+        "osm_way": 1094569966
+      }
+    ],
+    "color": "All data-center markers and popup bullets purple; verification metadata retained separately."
+  }
+]
