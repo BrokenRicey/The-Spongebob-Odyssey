@@ -1,0 +1,11 @@
+pandapower==3.5.6
+numpy>=1.26,<2.5
+pandas>=2.3,<2.4
+fastapi==0.143.0
+uvicorn==0.54.0
+requests>=2.32,<3
+pytest>=8,<10
+httpx>=0.28,<1
+shapely>=2,<3
+matplotlib>=3.8,<4
+PYPOWER==5.1.21

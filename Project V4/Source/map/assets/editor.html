@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Texas Grid Analysis · Project V4</title>
+  <link rel="stylesheet" href="/vendor/leaflet.css">
+  <link rel="stylesheet" href="/editor.css">
+</head>
+<body>
+  <div id="app">
+    <header class="app-header">
+      <div class="brand"><span class="brand-mark">TX</span><div><h1>Texas Grid Analysis <span class="version">V4</span></h1><p>Houston transmission study</p></div></div>
+      <span id="save-state" class="save-state">Local project</span>
+      <nav class="file-actions" aria-label="Project files">
+        <button data-action="open">Open</button><button data-action="save">Save project</button><button data-action="export">Export results</button>
+      </nav>
+    </header>
+    <div class="study-bar">
+      <div class="case-tabs" role="group" aria-label="Editing case">
+        <button id="case-baseline" class="case-tab active" data-case="baseline" aria-pressed="true"><span class="step">1</span> Baseline</button>
+        <button id="case-scenario" class="case-tab" data-case="scenario" aria-pressed="false"><span class="step">2</span> Scenario</button>
+      </div>
+      <div class="study-caption"><strong id="case-title">Build your baseline</strong><span id="case-note">Edit the grid, then run the simulation.</span></div>
+      <button id="start-scenario" data-action="reset_scenario">Start scenario from baseline</button>
+      <button id="run-button" class="primary" data-action="run"><span class="play-icon">▶</span> Run simulation</button>
+    </div>
+    <main class="workspace">
+      <section class="map-workspace" aria-label="Editable Houston grid">
+        <div class="map-toolbar">
+          <div class="edit-tools" role="group" aria-label="Map editing tools">
+            <button data-tool="select" class="active" aria-pressed="true">Select</button>
+            <button data-tool="load" aria-pressed="false">+ Data center</button>
+            <button data-tool="bus" aria-pressed="false">+ Bus</button>
+            <button data-tool="line" aria-pressed="false">Draw line</button>
+            <button data-tool="move" aria-pressed="false">Move</button>
+          </div>
+          <div class="history-tools"><button id="undo-button" data-action="undo" title="Undo last edit (Ctrl+Z)" disabled>Undo</button><button id="redo-button" data-action="redo" title="Redo last edit (Ctrl+Y)" disabled>Redo</button></div>
+        </div>
+        <div class="map-frame">
+          <div id="map" aria-label="Houston network map"></div>
+          <div id="tool-hint" class="tool-hint" role="status">Select a transmission line, bus, or data center to edit it.</div>
+          <div class="map-controls">
+            <label>Map colors<select id="map-colors"><option value="loading">Line loading</option><option value="voltage">Bus voltage</option><option value="change">Change from baseline</option><option value="inputs">Equipment status</option></select></label>
+            <label class="check"><input type="checkbox" id="streets" checked>Street background</label>
+            <label class="check"><input type="checkbox" id="show-buses" checked>Show buses</label>
+            <button id="fit-map">Fit grid</button>
+          </div>
+          <div class="map-legend" id="map-legend"><span class="legend-item"><i class="swatch line"></i>In service</span><span class="legend-item"><i class="swatch off"></i>Disabled</span><span class="legend-item"><i class="swatch dc"></i>Data center</span><span class="legend-item"><i class="swatch source"></i>Supply</span></div>
+          <div id="tile-note" class="tile-note" hidden>Street tiles unavailable. The grid remains editable.</div>
+        </div>
+        <div class="map-footer"><span id="network-count">Loading Houston grid…</span><span id="coordinates">Houston study area</span></div>
+        <section class="results-section">
+          <button id="results-toggle" class="results-heading" aria-expanded="true"><span>Results comparison</span><span id="result-summary">Run a baseline to begin</span><span id="results-chevron">⌄</span></button>
+          <div id="results-body" class="results-body">
+            <div class="metrics-wrap"><table class="metrics-table"><thead><tr><th>Metric</th><th>Baseline</th><th>Scenario</th><th>Change</th></tr></thead><tbody id="metrics-body"></tbody></table></div>
+            <div class="affected-wrap"><div class="affected-heading"><h2>Affected equipment</h2><span id="affected-count"></span></div><div id="affected-list" class="affected-list"><p class="muted">Run the simulation to see overloads and unsupplied areas.</p></div></div>
+          </div>
+        </section>
+      </section>
+      <aside class="inspector" aria-label="Selected equipment">
+        <div class="inspector-header"><div><span class="eyebrow">Selected equipment</span><h2 id="selection-title">Explore the grid</h2></div><span id="selection-state" class="status-pill" hidden></span></div>
+        <div id="selection-content" class="selection-content"><div class="empty-selection"><div class="empty-symbol">⌖</div><h3>Click a line to begin</h3><p>Inspect its connection, disable it, or change its endpoints.</p><p>Add a hypothetical data center anywhere on the map. It connects to the nearest line or bus.</p></div></div>
+        <div class="assumptions"><button id="assumptions-toggle" aria-expanded="false">Study assumptions <span>+</span></button><div id="assumptions-body" hidden>Houston route geometry provides the study layout. Electrical connectivity, line parameters, and supply points are assumptions. Data-center interfaces assume suitable equipment. These results describe this study model, not a validated utility network.</div></div>
+      </aside>
+    </main>
+    <footer class="statusbar"><span id="status-light" class="status-light"></span><span id="status-message" role="status" aria-live="polite">Connecting to the local simulation engine…</span><span id="run-state">Not calculated</span></footer>
+  </div>
+  <dialog id="editor-dialog"><form id="dialog-form"><div class="dialog-heading"><h2 id="dialog-title">Add equipment</h2><button type="button" id="dialog-close" aria-label="Close">×</button></div><div id="dialog-fields"></div><p id="dialog-note" class="muted"></p><div class="dialog-actions"><button type="button" id="dialog-cancel">Cancel</button><button type="submit" class="primary" id="dialog-submit">Add to study</button></div></form></dialog>
+  <script src="/vendor/leaflet.js"></script>
+  <script src="/qwebchannel.js"></script>
+  <script src="/editor.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+PROJECT V4 - START HERE
+
+WINDOWS: DOWNLOAD AND RUN
+1. Open https://github.com/BrokenRicey/The-Spongebob-Odyssey/releases/tag/project-v4
+2. Under Assets, download Project-V4-Windows-x64.zip.
+3. Right-click the ZIP and choose Extract All.
+4. Open the extracted Texas Grid Analysis V4 folder.
+5. Double-click Texas Grid Analysis V4.exe.
+
+That is it. No Python installation is needed for the Windows download.
+Keep the _internal folder next to the EXE. Do not run inside the ZIP.
+Internet is needed only for the street-map background.
+
+FIRST SIMULATION
+1. Stay on Baseline and click Run simulation.
+2. Choose Scenario, select a line, and click Disable.
+3. Click Run simulation again to compare the results.
+4. Use Save project to keep your work.
+
+OPTIONAL: RUN THE PYTHON SOURCE
+1. Install 64-bit Python 3.12 from https://www.python.org/downloads/windows/.
+   Include the Python launcher when installing.
+2. Download Project-V4-Source.zip from the same release and extract it.
+3. Open the extracted Project V4 folder, then open a terminal there.
+4. Run these commands one at a time:
+
+   py -3.12 -m venv .venv
+   .\.venv\Scripts\python.exe -m pip install -r Source\requirements-desktop.txt
+   .\.venv\Scripts\python.exe main.py
+
+Next time, only run the last command from the Project V4 folder.
+The first dependency installation needs internet access.
+
+FOLDERS
+Source       = program code, bundled data, and tests
+Verification = test results and a preview
+README.md    = features, controls, and model assumptions
+
+If the app does not start, extract the whole ZIP again and check that
+_internal is present. Startup errors are saved in the
+Texas Grid Analysis Logs folder in your Windows user folder.
+
+This is a student study model with assumed electrical values.
+See README.md for the model limits.
